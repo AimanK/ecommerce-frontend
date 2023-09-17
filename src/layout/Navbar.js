@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <nav id="nav" className="navbar navbar-expand-lg navbar-dark bg-secondary">
       
 
         <div className="container-fluid">
@@ -22,7 +22,7 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <Link class="py-2 d-none d-md-inline-block text-white" to="/shop">Shop</Link>
+          <a class="py-2 d-none d-md-inline-block text-white" href="/#shop">Shop</a>
           <Link class="py-2 d-none d-md-inline-block text-white" to="/aboutus">About Us</Link>
           <Link class="py-2 d-none d-md-inline-block text-white" to="/yourcart">Cart</Link>
 
