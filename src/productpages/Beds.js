@@ -3,7 +3,7 @@ import Footer from '../layout/Footer.js';
 import Card from '../layout/Card.js';
 import chairImage from '../images/armchair.jpg';
 
-function Tables() {
+function Beds() {
   return (
     <div class="container mt-4">
     <div class="d-flex flex-row flex-wrap">
@@ -23,7 +23,8 @@ function Tables() {
 
             <Footer />
     </div>
+
   )
 }
 
-export default Tables
+export default Beds

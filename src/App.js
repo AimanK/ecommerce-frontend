@@ -14,6 +14,10 @@ import AboutUs from './pages/AboutUs.js';
 import Cart from './pages/Cart.js';
 import Lighting from './productpages/Lighting.js';
 import Chairs from './productpages/Chairs.js';
+import Tables from './productpages/Tables.js';
+import Beds from './productpages/Beds.js';
+import AreaRugs from './productpages/AreaRugs.js';
+import Decor from './productpages/Decor.js';
 
 function App() {
   return (
@@ -32,6 +36,10 @@ function App() {
           <Route exact path="/yourcart" element={<Cart />} />
           <Route exact path="/lighting" element={<Lighting />} />
           <Route exact path="/chairs" element={<Chairs />} />
+          <Route exact path="/tables" element={<Tables />} />
+          <Route exact path="/arearugs" element={<AreaRugs />} />
+          <Route exact path="/beds" element={<Beds/>} />
+          <Route exact path="/decor" element={<Decor />} />
       </Routes>
 
       </Router>
