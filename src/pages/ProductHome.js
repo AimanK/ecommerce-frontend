@@ -1,7 +1,11 @@
 import React from 'react'
 import heroImage from '../images/hero-image.jpg';
 import chairImage from '../images/armchair.jpg';
-import lampImage from '../images/floor-lamp.jpg';
+import homeLampImage from '../images/floor-lamp-home.jpg';
+import tableImage from '../images/table.jpg';
+import bedImage from '../images/bed.jpg';
+import rugImage from '../images/arearug.jpg';
+import decorImage from '../images/decor.jpg';
 import { Link } from 'react-router-dom';
 import Footer from "../layout/Footer.js"
 import Sidebar from "../layout/Sidebar.js"
@@ -28,7 +32,7 @@ function ProductHome() {
                         </Link>
                         <p class="lead">let there be light</p>
                     </div>
-                    <div class="lamp-image mx-auto" style={{backgroundImage: "url(" + lampImage + ")", width: "80%", height: "300px", borderRadius: "21px 21px 0 0"}}></div>
+                    <div class="lamp-image mx-auto" style={{backgroundImage: "url(" + homeLampImage + ")", width: "80%", height: "300px", borderRadius: "21px 21px 0 0"}}></div>
                     </div>
                     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                     <div class="my-3 p-3">
@@ -49,7 +53,7 @@ function ProductHome() {
                         </Link>
                         <p class="lead">And an even wittier subheading.</p>
                     </div>
-                    <div class="bg-dark shadow-sm mx-auto" style={{width: "80%", height: "300px", borderRadius: "21px 21px 0 0"}}></div>
+                    <div class="table-image bg-dark shadow-sm mx-auto" style={{backgroundImage: "url(" + tableImage + ")",width: "80%", height: "300px", borderRadius: "21px 21px 0 0"}}></div>
                     </div>
                     <div class="bg-secondary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
                     <div class="my-3 py-3">
@@ -58,7 +62,7 @@ function ProductHome() {
                         </Link>
                         <p class="lead">And an even wittier subheading.</p>
                     </div>
-                    <div class="bg-light shadow-sm mx-auto" style={{width: "80%", height: "300px", borderRadius: "21px 21px 0 0"}}></div>
+                    <div class="bed-image bg-dark shadow-sm mx-auto" style={{backgroundImage: "url(" + bedImage + ")",width: "80%", height: "300px", borderRadius: "21px 21px 0 0"}}></div>
                     </div>
                 </div>
 
@@ -70,7 +74,7 @@ function ProductHome() {
                         </Link>
                         <p class="lead">And an even wittier subheading.</p>
                     </div>
-                    <div class="bg-body shadow-sm mx-auto" style={{width: "80%", height: "300px", borderRadius: "21px 21px 0 0"}}></div>
+                    <div class="rug-image bg-body shadow-sm mx-auto" style={{backgroundImage: "url(" + rugImage + ")", width: "80%", height: "300px", borderRadius: "21px 21px 0 0"}}></div>
                     </div>
                     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                     <div class="my-3 py-3">
@@ -79,7 +83,7 @@ function ProductHome() {
                         </Link>
                         <p class="lead">And an even wittier subheading.</p>
                     </div>
-                    <div class="bg-dark shadow-sm mx-auto" style={{width: "80%", height: "300px", borderRadius: "21px 21px 0 0"}}></div>
+                    <div class="decor-image bg-dark shadow-sm mx-auto" style={{backgroundImage: "url(" + decorImage + ")", width: "80%", height: "300px", borderRadius: "21px 21px 0 0"}}></div>
                     </div>
                 </div>
 

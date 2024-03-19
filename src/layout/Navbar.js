@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
+
 export default function Navbar() {
+
   return (
     <div>
-      <nav id="nav" className="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <nav id="nav" className="navbar navbar-expand-lg navbar-dark bg-secondary dropdown">
       
 
         <div className="container-fluid">
@@ -22,7 +24,27 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <a class="py-2 d-none d-md-inline-block text-white" href="/#shop">Shop</a>
+            
+          <label class="dropdown navbar-dark bg-secondary">
+
+          <div class="dd-button">
+                Shop
+          </div>
+
+              <input type="checkbox" class="dd-input" id="test"></input>
+
+              <ul class="dd-menu">
+              <Link to="/"><li>Home</li></Link>
+              <Link to="/lighting"><li>Lighting</li></Link>
+              <Link to="/chairs"><li>Chairs</li></Link>
+              <Link to="/tables"><li>Tables</li></Link>
+              <Link to="/beds"><li>Beds</li></Link>
+              <Link to="/arearugs"><li>Area Rugs</li></Link>
+              <Link to="/decor"><li>Decor</li></Link>
+              </ul>
+
+          </label> 
+
           <Link class="py-2 d-none d-md-inline-block text-white" to="/aboutus">About Us</Link>
           <Link class="py-2 d-none d-md-inline-block text-white" to="/yourcart">Cart</Link>
 
