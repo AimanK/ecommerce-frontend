@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
 
   return (
     <div>
@@ -27,20 +37,20 @@ export default function Navbar() {
             
           <label class="dropdown navbar-dark bg-secondary">
 
-          <div class="dd-button">
+          <div class="dd-button" onClick={handleToggle}>
                 Shop
           </div>
 
-              <input type="checkbox" class="dd-input" id="test"></input>
+              <input type="checkbox" class="dd-input" id="test" checked={isOpen}></input>
 
               <ul class="dd-menu">
-              <Link to="/"><li>Home</li></Link>
-              <Link to="/lighting"><li>Lighting</li></Link>
-              <Link to="/chairs"><li>Chairs</li></Link>
-              <Link to="/tables"><li>Tables</li></Link>
-              <Link to="/beds"><li>Beds</li></Link>
-              <Link to="/arearugs"><li>Area Rugs</li></Link>
-              <Link to="/decor"><li>Decor</li></Link>
+              <Link to="/"><li onClick={handleLinkClick}>Home</li></Link>
+              <Link to="/lighting"><li onClick={handleLinkClick}>Lighting</li></Link>
+              <Link to="/chairs"><li onClick={handleLinkClick}>Chairs</li></Link>
+              <Link to="/tables"><li onClick={handleLinkClick}>Tables</li></Link>
+              <Link to="/beds"><li onClick={handleLinkClick}>Beds</li></Link>
+              <Link to="/arearugs"><li onClick={handleLinkClick}>Area Rugs</li></Link>
+              <Link to="/decor"><li style={{borderBottom: "none"}} onClick={handleLinkClick}>Decor</li></Link>
               </ul>
 
           </label> 

@@ -15,6 +15,7 @@ function Footer () {
                     <div class="col-6 col-md">
                     <a class="text-dark" href="#shop"><h5>Shop</h5></a>
                     <ul class="list-unstyled text-small">
+                        <li><Link class="link-secondary" to="/#shop">Home</Link></li>
                         <li><Link class="link-secondary" to="/lighting">Lighting Fixtures</Link></li>
                         <li><Link class="link-secondary" to="/chairs">Chairs</Link></li>
                         <li><Link class="link-secondary" to="/tables">Tables</Link></li>
@@ -26,9 +27,9 @@ function Footer () {
                     <div class="col-6 col-md">
                     <Link class="text-dark" to="/aboutus"><h5>About Us</h5></Link>
                     <ul class="list-unstyled text-small">
-                        <li><a class="link-secondary" href="#">Our Story</a></li>
+                        <li><Link class="link-secondary" to="/aboutus">Our Story</Link></li>
                         <li><a class="link-secondary" href="https://www.linkedin.com/in/aiman-kayad/">LinkedIn</a></li>
-                        <li><a class="link-secondary" href="#">View My Resume</a></li>
+                        <li><Link class="link-secondary" to="/aboutus">View My Resume</Link></li>
                     </ul>
                     </div>
                     <div class="col-6 col-md">

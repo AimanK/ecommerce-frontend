@@ -7,8 +7,7 @@ import bedImage from '../images/bed.jpg';
 import rugImage from '../images/arearug.jpg';
 import decorImage from '../images/decor.jpg';
 import { Link } from 'react-router-dom';
-import Footer from "../layout/Footer.js"
-import Sidebar from "../layout/Sidebar.js"
+import Footer from "../layout/Footer.js";
 
 function ProductHome() {
   return (

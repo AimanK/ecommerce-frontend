@@ -79,10 +79,11 @@ a:hover {
 
 .dd-button {
   display: inline-block;
-  border: 1px solid gray;
-  border-radius: 4px;
+  color: #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
   padding: 10px 30px 10px 20px;
-  background-color: #ffffff;
+  background-color: #9fa6b200;
   cursor: pointer;
   white-space: nowrap;
 }
@@ -101,9 +102,9 @@ a:hover {
 }
 
 .dd-button:hover {
+  color: #53575e;
   background-color: #eeeeee;
 }
-
 
 .dd-input {
   display: none;
@@ -112,7 +113,7 @@ a:hover {
 .dd-menu {
   position: absolute;
   top: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid #9fa6b200;
   border-radius: 7px;
   padding: 0;
   margin: 2px 0 0 0;
@@ -131,6 +132,7 @@ a:hover {
 } 
 
 .dd-menu li {
+  border-bottom: 1px solid #53575e;
   padding: 10px 20px;
   cursor: pointer;
   white-space: nowrap;
